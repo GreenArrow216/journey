@@ -5,9 +5,14 @@
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  scroll-padding-left: 0;
+  scroll-padding-left: 0; // Useful only if there's left padding
+  scroll-margin-left: 0;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   &::-webkit-scrollbar {
     display: none;
@@ -18,12 +23,11 @@
   flex: none;
   width: 100vw;
   height: 100vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   position: relative;
-  overflow: hidden;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   .panel-title {
     font-size: 3rem;
     font-weight: bold;
