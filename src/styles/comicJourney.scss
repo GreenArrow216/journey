@@ -1,0 +1,94 @@
+.scroll-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 0;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.comic-panel {
+  flex: none;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .panel-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+  }
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 8rem;
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  align-content: center;
+}
+
+.skill-tile {
+  background: white;
+  color: black;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+//   border: 5px solid white;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(2) rotate(2deg);
+  }
+
+  &.shape-1 {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 90%);
+    width: 150px;
+    height: 150px;
+    background: #ffd93d;
+  }
+  
+  &.shape-2 {
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 90%);
+    width: 170px;
+    height: 130px;
+    background: #ff6b6b;
+  }
+  
+  &.shape-3 {
+    clip-path: polygon(0 10%, 90% 0%, 100% 90%, 10% 100%);
+    width: 140px;
+    height: 160px;
+    background: #4d96ff;
+  }
+  
+  &.shape-4 {
+    clip-path: polygon(10% 0%, 100% 10%, 90% 100%, 0% 90%);
+    width: 160px;
+    height: 140px;
+    background: #ff6b6b;
+  }
+  
+  &.shape-5 {
+    clip-path: polygon(0 0, 90% 10%, 100% 100%, 10% 90%);
+    width: 150px;
+    height: 140px;
+    background: #ffd93d;
+  }
+}
