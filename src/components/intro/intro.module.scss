@@ -1,0 +1,46 @@
+.intro {
+  width: 100%;
+  height: 98%;
+  border: 10px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cityScape {
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  &.cityTop {
+    z-index: 1;
+    top: 0;
+  }
+
+  &.cityBottom {
+    bottom: 0;
+    transform: none;
+    z-index: 3;
+  }
+}
+
+.profile {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  overflow: visible;
+  p {
+    font-size: 140px;
+    color: black;
+  }
+  img {
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+  }
+}

@@ -5,7 +5,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  scroll-padding-left: 0; // Useful only if there's left padding
+  scroll-padding-right: 10; // Useful only if there's left padding
   scroll-margin-left: 0;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;

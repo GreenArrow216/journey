@@ -1,0 +1,94 @@
+<svg
+  viewBox="0 0 880 220"
+  xmlns="http://www.w3.org/2000/svg"
+  class="cityscape-svg"
+  preserveAspectRatio="none"
+>
+  <g fill="currentColor" stroke="none">
+    <!-- Building 1 -->
+    <rect x="0" y="130" width="30" height="90" />
+    <rect x="10" y="140" width="8" height="8" fill="white" fill-opacity="0.6" />
+    
+    <!-- Building 2 -->
+    <rect x="40" y="100" width="40" height="120" />
+    <rect x="50" y="110" width="10" height="10" fill="#fff" fill-opacity="0.6" />
+    <rect x="50" y="130" width="10" height="10" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 3 -->
+    <rect x="90" y="120" width="20" height="100" />
+    <rect x="94" y="125" width="6" height="6" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 4 -->
+    <rect x="120" y="70" width="30" height="150" />
+    <rect x="130" y="80" width="8" height="8" fill="#fff" fill-opacity="0.6" />
+    <rect x="130" y="100" width="8" height="8" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 5 -->
+    <rect x="160" y="110" width="25" height="110" />
+    <rect x="165" y="120" width="6" height="6" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 6 -->
+    <rect x="200" y="90" width="30" height="130" />
+    <rect x="210" y="100" width="8" height="8" fill="#fff" fill-opacity="0.6" />
+    <rect x="210" y="120" width="8" height="8" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 7 -->
+    <rect x="240" y="110" width="20" height="110" />
+    <rect x="244" y="115" width="6" height="6" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 8 -->
+    <rect x="270" y="80" width="40" height="140" />
+    <rect x="280" y="90" width="10" height="10" fill="#fff" fill-opacity="0.6" />
+    <rect x="280" y="110" width="10" height="10" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 9 -->
+    <rect x="320" y="130" width="25" height="90" />
+    <rect x="325" y="140" width="6" height="6" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 10 -->
+    <rect x="360" y="100" width="30" height="120" />
+    <rect x="370" y="110" width="8" height="8" fill="#fff" fill-opacity="0.6" />
+    <rect x="370" y="130" width="8" height="8" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 11 -->
+    <rect x="400" y="90" width="50" height="130" />
+    <rect x="410" y="100" width="10" height="10" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 12 -->
+    <rect x="460" y="120" width="30" height="100" />
+    <rect x="470" y="130" width="8" height="8" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 13 -->
+    <rect x="500" y="100" width="40" height="120" />
+    <rect x="510" y="110" width="10" height="10" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 14 -->
+    <rect x="550" y="70" width="35" height="150" />
+    <rect x="560" y="80" width="8" height="8" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 15 -->
+    <rect x="600" y="90" width="25" height="130" />
+    <rect x="605" y="100" width="6" height="6" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 16 -->
+    <rect x="640" y="110" width="30" height="110" />
+    <rect x="650" y="120" width="8" height="8" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 17 -->
+    <rect x="680" y="100" width="40" height="120" />
+    <rect x="690" y="110" width="10" height="10" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 18 -->
+    <rect x="730" y="120" width="25" height="100" />
+    <rect x="735" y="130" width="6" height="6" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 19 -->
+    <rect x="770" y="80" width="50" height="140" />
+    <rect x="780" y="90" width="10" height="10" fill="#fff" fill-opacity="0.6" />
+    <rect x="780" y="110" width="10" height="10" fill="#fff" fill-opacity="0.6" />
+
+    <!-- Building 20 -->
+    <rect x="830" y="100" width="30" height="120" />
+    <rect x="840" y="110" width="8" height="8" fill="#fff" fill-opacity="0.6" />
+  </g>
+</svg>
