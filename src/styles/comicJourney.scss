@@ -28,13 +28,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  .panel-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px black;
-    text-align: center;
-  }
+  position: relative;
+  background-image:
+    radial-gradient(#00000020 1px, transparent 1px),
+    radial-gradient(#00000010 1px, transparent 1px);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
 }
 
 .skills-grid {
@@ -55,7 +54,6 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
-//   border: 5px solid white;
   transition: transform 0.3s ease;
   &:hover {
     transform: scale(2) rotate(2deg);

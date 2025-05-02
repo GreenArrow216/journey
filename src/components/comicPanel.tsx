@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { PanelType } from "../constants";
-import Intro from "./intro/intro";
-import "../styles/comicJourney.scss"
+import { careerData, PanelType } from "../constants";
+import Intro from "../pages/intro/intro";
+import "../styles/comicJourney.scss";
+import Careers from "../pages/careers/careers";
 
 type ComicPanelProps = {
   id: PanelType;
@@ -14,6 +15,10 @@ export default function ComicPanel({ id, color, title }: ComicPanelProps) {
     switch (id) {
       case PanelType.intro:
         return <Intro />;
+      case PanelType.early:
+        return <Careers {...careerData.early} />;
+      case PanelType.recent:
+        return <Careers {...careerData.recent} />;
       default:
         return (
           <div className="content">
