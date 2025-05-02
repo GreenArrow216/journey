@@ -1,7 +1,7 @@
 import { CareersProps } from "./pages/careers/careers";
 import MallowLogo from "./assets/companies/Mallow-tech.png"
 import Kissflow from "./assets/companies/Kissflow.svg"
-import OrkneyLora from "./assets/companies/Orkney-Lora.jpg"
+import OrkneyLora from "./assets/companies/Orkney-Lora.svg"
 import OptiTwin from "./assets/companies/Opti-twin.svg"
 
 export enum PanelType {
@@ -13,6 +13,7 @@ export enum PanelType {
 
 export const careerData: Record<string, CareersProps> = {
   early: {
+    title: 'The Origins',
     firstLogo: MallowLogo,
     secondLogo: Kissflow,
     firstAchievements: [
@@ -52,6 +53,7 @@ export const careerData: Record<string, CareersProps> = {
     ],
   },
   recent: {
+    title: 'The Rise',
     firstLogo: OrkneyLora,
     secondLogo: OptiTwin,
     firstAchievements: [

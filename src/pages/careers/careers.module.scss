@@ -27,9 +27,6 @@
   .logo1 {
     grid-area: logo1;
     clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
-    background-size: 10px 10px;
-    background-position: 0 0, 5px 5px;
-    background-color: black;
     justify-content: left;
   }
   .achievements1 {
@@ -43,14 +40,13 @@
     grid-area: logo2;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 18% 100%);
     justify-content: right;
-
   }
   .achievements2 {
     grid-area: achievements2;
   }
   .skills2 {
     grid-area: skills2;
-    clip-path: polygon(0% 0%, 100% 0%, 93% 100%, 0% 100%)
+    clip-path: polygon(0% 0%, 100% 0%, 93% 100%, 0% 100%);
   }
   .logo1,
   .logo2 {
@@ -58,17 +54,29 @@
       radial-gradient(#fcd21d 1px, transparent 1px);
     background-size: 10px 10px;
     background-position: 0 0, 5px 5px;
+    background-color: #6bcb77;
+    position: relative;
+    overflow: visible;
     img {
-        width:90%;
-        object-fit: scale-down;
+      width: 90%;
+      object-fit: scale-down;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) rotate(-6deg);
+      background: white;
+      border: 3px solid black;
+      box-shadow: 5px 5px 0 black;
+      padding: 8px;
+      z-index: 2;
     }
   }
   .skills1,
   .skills2 {
-    background: repeating-linear-gradient(#cceeff 0 1px, transparent 1px 20px),
-      repeating-linear-gradient(90deg, #cceeff 0 1px, transparent 1px 20px);
-    background-color: #e6f7ff;
+    background: repeating-linear-gradient(#ba9e2c 0 1px, transparent 1px 20px),
+      repeating-linear-gradient(90deg, #ba9e2c 0 1px, transparent 1px 20px);
+    background-color: #ffd93d;
     justify-content: center;
+    flex-direction: column;
   }
   .achievements1,
   .achievements2 {
@@ -76,12 +84,13 @@
     clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
     background: repeating-linear-gradient(
       -45deg,
-      #fff 0,
-      #fff 4px,
-      #f2f2f2 4px,
-      #f2f2f2 8px
+      #ff6b6b 0,
+      #ff6b6b 4px,
+      #ff6b6bb5 4px,
+      #ff6b6bb5 8px
     );
     clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+    flex-direction: column;
   }
   .logo1,
   .logo2,
@@ -91,6 +100,8 @@
   .skills2 {
     display: flex;
     align-items: center;
-    // border: 3px solid black;
+    color: black;
+    font-size: 32px;
+    position: relative;
   }
 }

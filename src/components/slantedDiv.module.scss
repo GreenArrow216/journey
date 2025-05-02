@@ -1,0 +1,11 @@
+.title {
+  position: absolute;
+  padding: 2%;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: white;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+  box-shadow: inset 0px -18px 0px black;
+}

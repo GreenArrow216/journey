@@ -8,7 +8,7 @@
 	.st1{fill:#4AA147;}
 	.st2{fill:#CF2C91;}
 	.st3{fill:#F58220;}
-	.st4{fill:#fff;}
+	.st4{fill:#000;}
 </style>
 <g>
 	<ellipse transform="matrix(0.7094 -0.7048 0.7048 0.7094 1.7107 19.7608)" class="st0" cx="24.8" cy="7.8" rx="8.2" ry="4.9"/>

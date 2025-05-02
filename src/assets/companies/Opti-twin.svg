@@ -2,7 +2,7 @@
     viewBox="0 0 500 214">
     <defs>
         <style>
-            .cls-1{fill:url(#radial-gradient);}.cls-2{isolation:isolate;}.cls-3{fill:url(#New_Gradient_Swatch_2);}.cls-13,.cls-14,.cls-4,.cls-8{mix-blend-mode:screen;}.cls-4{opacity:0.5;fill:url(#radial-gradient-3);}.cls-5{fill:url(#New_Gradient_Swatch_2-2);}.cls-6{fill:#fff;}.cls-13,.cls-14,.cls-7{fill:#91b706;}.cls-8{opacity:0.3;}.cls-9{fill:#372e70;}.cls-10{fill:url(#linear-gradient);}.cls-11{fill:#fff;}.cls-12{mask:url(#mask);}.cls-14{opacity:0.4;}</style>
+            .cls-1{fill:url(#radial-gradient);}.cls-2{isolation:isolate;}.cls-3{fill:url(#New_Gradient_Swatch_2);}.cls-13,.cls-14,.cls-4,.cls-8{mix-blend-mode:screen;}.cls-4{opacity:0.5;fill:url(#radial-gradient-3);}.cls-5{fill:url(#New_Gradient_Swatch_2-2);}.cls-6{fill:#fff;}.cls-13,.cls-14,.cls-7{fill:#91b706;}.cls-8{opacity:0.3;}.cls-9{fill:#372e70;}.cls-10{fill:url(#linear-gradient);}.cls-11{fill:#000;}.cls-12{mask:url(#mask);}.cls-14{opacity:0.4;}</style>
         <radialGradient id="radial-gradient" cx="702.82" cy="713.29" r="42.57"
             gradientTransform="translate(-409.21 -718.77) rotate(7.56)"
             gradientUnits="userSpaceOnUse">
