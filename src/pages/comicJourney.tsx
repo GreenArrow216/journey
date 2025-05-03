@@ -1,8 +1,6 @@
 import ComicPanel from "../components/comicPanel";
 import { PanelType } from "../constants";
 
-
-
 const panels = [
   { id: PanelType.intro, title: "Intro", color: "#FFD93D" },
   { id: PanelType.early, title: "Early Career", color: "#03A9F4" },

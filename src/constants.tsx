@@ -11,6 +11,24 @@ export enum PanelType {
   connect = "connect",
 }
 
+export const cardVariants = {
+  hidden:{
+    scale: 0.5,
+    opacity: 0,
+  },
+  visible: (i:number) => ({
+    scale:1,
+    opacity: 1,
+    transition: {
+      delay: i * 0.1,
+      type: "spring",
+      stiffness: 500,
+      damping: 15,
+    },
+  }),
+};
+
+
 export const careerData: Record<string, CareersProps> = {
   early: {
     title: 'The Origins',
