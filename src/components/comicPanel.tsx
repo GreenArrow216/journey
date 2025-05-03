@@ -3,6 +3,7 @@ import { careerData, PanelType } from "../constants";
 import Intro from "../pages/intro/intro";
 import "../styles/comicJourney.scss";
 import Careers from "../pages/careers/careers";
+import Connect from "../pages/connect/connect";
 
 type ComicPanelProps = {
   id: PanelType;
@@ -19,6 +20,8 @@ export default function ComicPanel({ id, color, title }: ComicPanelProps) {
         return <Careers {...careerData.early} />;
       case PanelType.recent:
         return <Careers {...careerData.recent} />;
+      case PanelType.connect:
+        return <Connect />;
       default:
         return (
           <div className="content">

@@ -1,4 +1,5 @@
-import SlantedDiv from "../../components/slantedDiv";
+import ComicAchievements from "../../components/achievements/achievements";
+import ComicSkills from "../../components/skills/skills";
 import careersStyles from "./careers.module.scss";
 
 export type CareersProps = {
@@ -25,35 +26,27 @@ const Careers = ({
       <h1>{title}</h1>
       <div className={careersStyles.grid}>
         <div className={careersStyles.logo1}>
-          <SlantedDiv text="Hero Base" />
+          <div className={careersStyles.comicHeading}>Hero Base</div>
           <img src={firstLogo} alt={"logo.jpg"} />
         </div>
         <div className={careersStyles.achievements1}>
-          <SlantedDiv text="Power Moves" />
-          {firstAchievements.map((ach, i) => (
-            <p key={i}>{ach}</p>
-          ))}
+          <div className={careersStyles.comicHeading}>Power Moves</div>
+          <ComicAchievements achievements={firstAchievements} />
         </div>
         <div className={careersStyles.skills1}>
-          <SlantedDiv text="Skills Used" />
-          {firstSkills.map((skill, i) => (
-            <p key={i}>{skill}</p>
-          ))}
+          <div className={careersStyles.comicHeading}>Skills Used</div>
+          <ComicSkills skills={firstSkills}/>
         </div>
         <div className={careersStyles.skills2}>
-          <SlantedDiv text="Skills Used" />
-          {secondSkills.map((skill, i) => (
-            <p key={i}>{skill}</p>
-          ))}
+          <div className={careersStyles.comicHeading}>Skills Used</div>
+          <ComicSkills skills={secondSkills}/>
         </div>
         <div className={careersStyles.achievements2}>
-          <SlantedDiv text="Power Moves" />
-          {secondAchievements.map((ach, i) => (
-            <p key={i}>{ach}</p>
-          ))}
+          <div className={careersStyles.comicHeading}>Power Moves</div>
+          <ComicAchievements achievements={secondAchievements} />
         </div>
         <div className={careersStyles.logo2}>
-          <SlantedDiv text="Hero Base" />
+          <div className={careersStyles.comicHeading}>Hero Base</div>
           <img src={secondLogo} alt={"logo.jpg"} />
         </div>
       </div>

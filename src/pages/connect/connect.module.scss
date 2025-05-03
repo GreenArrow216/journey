@@ -1,0 +1,68 @@
+.connectContainer {
+    padding: 2rem;
+    background: repeating-linear-gradient(
+      45deg,
+      #fff 0px,
+      #fff 10px,
+      #f4f4f4 10px,
+      #f4f4f4 20px
+    );
+    border: 8px solid black;
+    color: black;
+    text-align: center;
+    width: 70%;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    background-color: #fce205;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border: 5px solid black;
+    transform: rotate(-3deg);
+    box-shadow: 4px 4px 0 black;
+  }
+  
+  .actionsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border: 5px solid black;
+    padding: 1rem;
+    box-shadow: 5px 5px 0 black;
+    transition: transform 0.2s ease;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+  
+    &:hover {
+      transform: scale(1.05) rotate(-1deg);
+      background-color: #ffeb3b;
+    }
+  }
+  
+  // Comic color backgrounds
+  .resume {
+    background-color: #f44336;
+  }
+  .linkedin {
+    background-color: #03a9f4;
+  }
+  .email {
+    background-color: #ff9800;
+  }
+  .portfolio {
+    background-color: #9c27b0;
+  }
+  

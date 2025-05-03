@@ -5,11 +5,9 @@ import { PanelType } from "../constants";
 
 const panels = [
   { id: PanelType.intro, title: "Intro", color: "#FFD93D" },
-  // { id: "contents", type: "normal", title: "Contents", color: "#FFD93D" },
-  // { id: "skills", type: "skills", title: "Skills", color: "#6BCB77" },
-  { id: PanelType.early, title: "Early Career", color: "#4D96FF" },
-  { id: PanelType.recent, title: "Recent Career", color: "#8358FF" },
-  { id: PanelType.connect, title: "Let's Connect", color: "#FF8FAB" },
+  { id: PanelType.early, title: "Early Career", color: "#03A9F4" },
+  { id: PanelType.recent, title: "Recent Career", color: "#E91E63" },
+  { id: PanelType.connect, title: "Let's Connect", color: "#4CAF50" },
 ];
 
 export default function ComicJourney() {
