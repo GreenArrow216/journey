@@ -1,4 +1,13 @@
 .connectContainer {
+   border:10px solid white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .linksContainer {
     padding: 2rem;
     background: repeating-linear-gradient(
       45deg,
@@ -6,7 +15,7 @@
       #fff 10px,
       #f4f4f4 10px,
       #f4f4f4 20px
-    );
+    ); 
     border: 8px solid black;
     color: black;
     text-align: center;

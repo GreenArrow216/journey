@@ -26,11 +26,7 @@
   overflow-x: hidden;
   border: 3px solid black;
   position: relative;
-  @media screen and (max-width: 768px) {
-    grid-template-areas:
-      "logo1 logo1 achievements1 achievements1 skills1 skills1"
-      "skills2 skills2 achievements2 achievements2 logo2 logo2";
-  }
+
   .logo1 {
     grid-area: logo1;
     clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
@@ -86,6 +82,9 @@
         transform: translateX(-50%) translateY(20%) rotate(-333deg);
         width: 100%;
       }
+      @media screen and (max-width: 480px) {
+        position: relative;
+      }
     }
   }
   .skills1,
@@ -133,6 +132,37 @@
     color: black;
     position: relative;
   }
+  @media screen and (max-width: 768px) {
+    grid-template-areas:
+      "logo1 logo1 achievements1 achievements1 skills1 skills1"
+      "skills2 skills2 achievements2 achievements2 logo2 logo2";
+  }
+  @media screen and (max-width: 480px) {
+    grid-template-areas:
+      "logo1"
+      "achievements1"
+      "skills1"
+      "logo2"
+      "achievements2"
+      "skills2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    .logo1,.logo2, .achievements1, .achievements2, .skills1, .skills2 {
+      clip-path: none;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+    }
+    .logo1,.logo2 {
+      padding: 10px;
+      img {
+        transform: translateX(0%) translateY(0%) rotate(0deg);
+        left: 0;
+        width: 80%;
+      }
+    }
+  }
 }
 
 .comicHeading {
@@ -144,5 +174,10 @@
   @media screen and (max-width: 768px) {
     margin-bottom: 0;
     font-size: 2rem;
+  }
+  @media screen and (max-width: 480px) {
+    position: relative !important;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
   }
 }
