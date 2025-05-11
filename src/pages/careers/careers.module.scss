@@ -18,12 +18,19 @@
     "logo1 achievements1 achievements1 achievements1 skills1 skills1"
     "skills2 skills2 achievements2 achievements2 achievements2 logo2";
   grid-template-columns: repeat(6, 1fr);
-  row-gap: 20px;
+  row-gap: 15px;
   padding: 10px;
   height: 100%;
   width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
   border: 3px solid black;
   position: relative;
+  @media screen and (max-width: 768px) {
+    grid-template-areas:
+      "logo1 logo1 achievements1 achievements1 skills1 skills1"
+      "skills2 skills2 achievements2 achievements2 logo2 logo2";
+  }
   .logo1 {
     grid-area: logo1;
     clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
@@ -59,10 +66,10 @@
     overflow: visible;
     .comicHeading {
       position: absolute;
-      top:0;
+      top: 0;
       width: 100%;
       text-align: center;
-      color:#9C27B0;
+      color: #9c27b0;
     }
     img {
       width: 90%;
@@ -75,19 +82,23 @@
       box-shadow: 5px 5px 0 black;
       padding: 8px;
       z-index: 2;
+      @media screen and (max-width: 768px) {
+        transform: translateX(-50%) translateY(20%) rotate(-333deg);
+        width: 100%;
+      }
     }
   }
   .skills1,
   .skills2 {
     background: repeating-linear-gradient(#9d75a3 0 1px, transparent 1px 20px),
       repeating-linear-gradient(90deg, #9d75a3 0 1px, transparent 1px 20px);
-    background-color: #9C27B0;
+    background-color: #9c27b0;
     justify-content: center;
     flex-direction: column;
     .comicHeading {
-      color: #FF9800;
+      color: #ff9800;
       position: absolute;
-      top:0;
+      top: 0;
       width: 100%;
       text-align: center;
     }
@@ -108,9 +119,8 @@
     );
     flex-direction: column;
     .comicHeading {
-      color: #e25552
+      color: #e25552;
     }
-    
   }
   .logo1,
   .logo2,
@@ -131,4 +141,8 @@
   text-align: center;
   text-shadow: 2px 2px 0 black;
   transform: rotate(-2deg);
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
 }

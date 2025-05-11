@@ -1,32 +1,49 @@
+.skillGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  row-gap: 24px;
+  justify-content: center;
+  width: 90%;
+}
 
-  .skillGrid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    row-gap: 24px;
-    justify-content: center;
-    width: 90%;
+.skillNote {
+  background-color: #fff9c4;
+  border: 2px solid #fdd835;
+  padding: 8px 12px;
+  min-width: 80px;
+  max-width: 200px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #424242;
+  box-shadow: 3px 3px 0px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 480px) {
+    font-size: 0.7rem;
   }
-  
-  .skillNote {
-    background-color: #fff9c4;
-    border: 2px solid #fdd835;
-    padding: 8px 12px;
-    min-width: 80px;
-    max-width: 120px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #424242;
-    box-shadow: 3px 3px 0px black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+    padding: 0px 4px;
+    min-width: 0;
+    font-size: 1rem;
   }
-  
-  /* Add variety with subtle rotations */
-  .note0 { transform: rotate(-3deg); }
-  .note1 { transform: rotate(2deg); }
-  .note2 { transform: rotate(-2deg); }
-  .note3 { transform: rotate(1deg); }
-  .note4 { transform: rotate(0deg); }
-  
+}
+
+/* Add variety with subtle rotations */
+.note0 {
+  transform: rotate(-3deg);
+}
+.note1 {
+  transform: rotate(2deg);
+}
+.note2 {
+  transform: rotate(-2deg);
+}
+.note3 {
+  transform: rotate(1deg);
+}
+.note4 {
+  transform: rotate(0deg);
+}
