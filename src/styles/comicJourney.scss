@@ -34,4 +34,14 @@
     radial-gradient(#00000010 1px, transparent 1px);
   background-size: 8px 8px;
   background-position: 0 0, 4px 4px;
+
+  .floating-p {
+    position: absolute;
+    right:10px;
+    padding: 10px 20px;
+    background-color: rgb(43, 163, 63);
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+  }
 }
