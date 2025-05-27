@@ -3,8 +3,9 @@ import cityScape from "../../assets/cityScape.svg";
 import Me from "../../assets/Comic-Gowtham.png";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { useEffect } from "react";
+import FloatingText from "../../components/floatingText";
 
-const Intro = () => {
+const Intro = ({onNext}:{onNext?: () => void}) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -29,6 +30,7 @@ const Intro = () => {
 
   return (
     <div className={introStyles.intro}>
+      <FloatingText onNext={onNext} text="Enter the Saga" bgColor="#9C27B0"/>
       <motion.img
         initial={{ y: -300, scaleY: -1 }}
         animate={{ y: 0, scaleY: -1 }}

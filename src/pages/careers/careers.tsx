@@ -1,4 +1,5 @@
 import ComicAchievements from "../../components/achievements/achievements";
+import FloatingText from "../../components/floatingText";
 import ComicSkills from "../../components/skills/skills";
 import { cardVariants } from "../../constants";
 import careersStyles from "./careers.module.scss";
@@ -12,6 +13,7 @@ export type CareersProps = {
   firstSkills: string[];
   secondSkills: string[];
   title: string;
+  onNext?: () => void;
 };
 
 const Careers = ({
@@ -22,9 +24,16 @@ const Careers = ({
   firstSkills,
   secondSkills,
   title,
+  onNext,
 }: CareersProps) => {
+  const isEarly: boolean = title === "The Origins";
   return (
     <div className={careersStyles.container}>
+      <FloatingText
+        onNext={onNext}
+        text={isEarly ? "Level Up" : "Connect"}
+        bgColor={isEarly ? "#F44336" : "#03A9F4"}
+      />
       <h1>{title}</h1>
       <div className={careersStyles.grid}>
         <motion.div
@@ -32,7 +41,7 @@ const Careers = ({
           initial={"hidden"}
           whileInView={"visible"}
           custom={1}
-          viewport={{ amount: 'all', once: true }}
+          viewport={{ amount: "all", once: true }}
           className={careersStyles.logo1}
         >
           <div className={careersStyles.comicHeading}>Hero Base</div>

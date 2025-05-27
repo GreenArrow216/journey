@@ -29,19 +29,24 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image:
-    radial-gradient(#00000020 1px, transparent 1px),
+  background-image: radial-gradient(#00000020 1px, transparent 1px),
     radial-gradient(#00000010 1px, transparent 1px);
   background-size: 8px 8px;
   background-position: 0 0, 4px 4px;
 
-  .floating-p {
+  .floating-text {
     position: absolute;
-    right:10px;
+    right: 10px;
     padding: 10px 20px;
-    background-color: rgb(43, 163, 63);
     font-size: 16px;
     cursor: pointer;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 0px black;
+    p {
+      margin-right: 10px;
+    }
   }
 }
